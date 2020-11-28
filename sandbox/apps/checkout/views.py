@@ -12,8 +12,8 @@ class PaymentDetailsView(views.PaymentDetailsView):
     (see `get_context_data method`) and PayPal Flow (the other methods).
     Naturally, you will only want to use one of the two.
     """
-    template_name = 'checkout/payment_details.html'
-    template_name_preview = 'checkout/preview.html'
+    template_name = 'oscar/checkout/payment_details_stripe.html'
+    template_name_preview = 'oscar/checkout/preview.html'
 
     def get_context_data(self, **kwargs):
         """
